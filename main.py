@@ -48,7 +48,7 @@ with app:
 """
 
 
-chat_id = "GamblingHut"
+chat_id = ""  # ID or name of channel, group or user from where we forward from
 result = []
 item = 0
 with app:
@@ -68,7 +68,7 @@ with app:
                 latest_message = messages[element]
                 #print(latest_message)
                 # Forward the latest message to your account
-                destination_chat_id = "jezzasender"
+                destination_chat_id = ""   # ID or name of channel, group or user to which we will forward to
                 #app.forward_messages(destination_chat_id, chat_id, latest_message.id)
                 ids.append(latest_message.id)
                 element -= 1
