@@ -10,13 +10,16 @@ api_hash = os.environ['HASH']
 
 keep_alive()
 
+"""
+
+we will start thw=e autorization using this code  :: uncomment for the first time
 async def main():
     async with Client("my_account", api_id, api_hash) as app:
-        await app.send_message("GindeeNCeaeP", "Hi sister, this message is sent using python bot! ")
+        await app.send_message("", "Hi sister, this message is sent using python bot! ")
 
-#asyncio.run(main())
+asyncio.run(main())
 
-
+"""
 # Create a new Pyrogram client
 app = Client("my_account")
 """
